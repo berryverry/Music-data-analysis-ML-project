@@ -1,17 +1,87 @@
-# 🎶 Music data analysis / ML project 🎶
+# 🎵 Music Data Analysis & Mental Health Modeling 🎵 
+<sub><i>A data science project exploring the relationship between music and mental health</i></sub>
 
-<br>
+---
 
-## ✅ Project background
-### The recommendation algorithm of YouTube is great at suggesting similar types of music based on the user's selected preferences. However, it rarely recommends other types of music that the user may not usually listen to but is interested in exploring. This can lead to feelings of regret as the user may miss out on discovering new music. It would be better if the algorithm could suggest other types of music that people with similar music tastes might enjoy listening to.
+## 📌 Project Background
 
-### I had an idea to suggest music not only based on people's preferred genres but also based on their specific characteristics. For instance, if a certain genre of music is popular among people with insomnia, the algorithm could recommend music that has been proven to help alleviate insomnia. I conducted a project to analyze music-related data, specifically focusing on the relationship between music and mental health. Going forward, I believe it would be beneficial to incorporate the insights gained from this analysis into a recommendation system.
+The recommendation algorithm of YouTube is great at suggesting music **within the user’s comfort zone**, but not so much **beyond it**. This can result in missed opportunities to discover new genres or emotionally helpful music.
 
-### After analyzing the data, I specifically examined the information related to insomnia. Subsequently, I conducted modelling and assessment to determine if individuals had insomnia based on various characteristics.
+> _What if music recommendations could be tailored not only by genre but also by psychological needs?_
 
-<br>
+Inspired by this question, I analyzed music-related survey data focusing on **the relationship between music habits and mental health**, especially **insomnia**.
 
-### ✔ Dataset
+---
+
+## 🔍 Key Research Questions
+
+I conducted exploratory data analysis (EDA) to answer questions such as:
+
+- 📊 **User Behavior**
+  - What are the top-ranked music streaming services?
+  - BPM patterns across preferred genres
+  - Do musicians also compose music? Vice versa?
+  - How much time do composers or instrumentalists spend listening to music?
+  - Do people who listen to music while working spend more time on average?
+
+- 🌐 **Listening Habits**
+  - Proportion of users who listen to foreign-language music
+  - How does the number of genres relate to exploratory tendencies?
+
+- 🧠 **Mental Health Correlations**
+  - What is the correlation between **anxiety, depression, insomnia, OCD**?
+  - Does music listening time affect mental health metrics?
+  - Do music effects (e.g., healing, emotional impact) show a pattern with mental health?
+  - Do music creators (composers, instrumentalists) show higher or lower mental distress?
+
+- 🎧 **Genre-Based Insights**
+  - How favorite genres relate to anxiety, depression, insomnia, OCD
+  - Does genre diversity help with mental health?
+
+---
+
+## 🧪 Modeling: Predicting Insomnia
+
+After EDA, **5 key features** with potential relationships to insomnia were selected:
+
+| Feature | Type |
+|--------|------|
+| 🎼 Composing music | Binary |
+| 🎹 Playing an instrument | Binary |
+| 🎶 Number of music genres listened to | Numerical |
+| 😔 Depression level | Continuous |
+| 😵 OCD level | Continuous |
+
+I framed it as a **binary classification** problem:  
+**“Does the user suffer from insomnia?”**  
+
+The final model used was:
+
+> ✅ **Logistic Regression**
+
+I evaluated performance using standard classification metrics (accuracy, recall, etc.) and validated the features' relevance in predicting insomnia symptoms.
+
+---
+
+## 📈 Insights & Reflection
+
+- Strong correlations exist between **musical activity** and **mental health conditions**.
+- The project revealed that music-based features can be **meaningful proxies for emotional states**.
+
+> _This project inspired me to further explore music-aware recommendation systems that respect emotional and mental needs, not just user clicks._
+
+---
+
+## 🛠️ Tools Used
+
+- **Languages:** Python  
+- **Libraries:** pandas, matplotlib, seaborn, plotly, scikit-learn  
+- **Techniques:** Data preprocessing, correlation analysis, EDA, Logistic Regression, binary classification  
+- **Visualization:** Pair plots, scatter plots, bar charts, heatmaps  
+
+---
+
+## 📎 Dataset
 #### Data: Music & Mental Health Survey Results from Kaggle
 
 <br>
